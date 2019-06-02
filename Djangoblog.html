@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Blog Template . Bootstrap</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/blog/">
+
+    <!-- Bootstrap core CSS -->
+<link href="/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ <!-- Custom styles for this template -->
+ <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+ <!-- Custom styles for this template -->
+ <link href="blog.css" rel="stylesheet">
+ <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="blog.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+<header class="blog-header py-3">
+  <div class="row flex-nowrap justify-content-between align-items-center">
+    <div class="col-4 pt-1">
+      <a class="text-muted" href="#">Subscribe</a>
+    </div>
+    <div class="col-4 text-center">
+    <h1><a class="blog-header-logo text-dark" href="#">Python</a></h1>
+    </div>
+    <div class="col-4 d-flex justify-content-end align-items-center">
+      <a class="text-muted" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24" focusable="false"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
+      </a>
+      <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+    </div>
+  </div>
+</header>
+
+<!--<div class="nav-scroller py-1 mb-2">
+  <nav class="nav d-flex justify-content-between">
+    <a class="p-2 text-muted" href="#">Bootstrap</a>
+    <a class="p-2 text-muted" href="#">Python</a>
+    <a class="p-2 text-muted" href="#">Aviation</a>
+    
+  </nav>
+</div> -->
+
+<div class="jumbotron p-4 p-md-5 text-white rounded bg-dark"><img src ="images/code.jpg" >
+  <div class="col-md-6 px-0">
+    <h1 class="display-4 font-italic">Build Django Project.</h1>
+    <p class="lead my-3">We'll build a Blog application with Django that allows users to create,edit and delete posts.</p>
+    
+  </div>
+</div>
+
+<!--<div class="row mb-2">
+  <div class="col-md-6">
+    <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+      <div class="col p-4 d-flex flex-column position-static">
+        <strong class="d-inline-block mb-2 text-primary">World</strong>
+        <h3 class="mb-0">Featured post</h3>
+        <div class="mb-1 text-muted">Nov 12</div>
+        <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="stretched-link">Continue reading</a>
+      </div>
+      <div class="col-auto d-none d-lg-block">
+        <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+      <div class="col p-4 d-flex flex-column position-static">
+        <strong class="d-inline-block mb-2 text-success">Design</strong>
+        <h3 class="mb-0">Post title</h3>
+        <div class="mb-1 text-muted">Nov 11</div>
+        <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="stretched-link">Continue reading</a>
+      </div>
+      <div class="col-auto d-none d-lg-block">
+        <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<main role="main" class="container">
+<div class="row">
+  <div class="col-md-8 blog-main">
+    <h3 class="pb-4 mb-4 font-italic border-bottom">
+      From the Firehose
+    </h3> -->
+
+    <div class="blog-post">
+      <h2 class="blog-post-title">Django blog post</h2>
+      <p class="blog-post-meta">May 26, 2019 by <a href="#">Michael Orenge</a></p>
+
+      
+      <hr>
+      <p>In this tutorial , we'll build a Blog application with Django that allows users to create,edit and delete posts. The homepage will list all blog posts, and there will be a dedicated page for each individual post.</p>
+      <blockquote>
+        <p>Django is an open-source web framework, written in Python, that follows the model-view-template architectural pattern. So Python is needed to be installed in your machine. Unfortunately, there was a significant update to Python several
+            years ago that created a big split between Python versions namely Python 2 the legacy version and Python 3 the version in active development.</p>
+
+        <p>Since Python 3 is the current version in active development and addressed as the future of Python, Django rolled out a significant update, and now all the releases after Django 2.0 are only compatible with Python 3.x. Therefore this tutorial
+           is strictly for Python 3.x. Make sure you have Python 3 Installed on your machine if not follow the below guides.</p>    
+      </blockquote>
+      
+      <h2>Django Installation.</h2>
+
+      <br>
+
+      <h4>Windows Users</h4>
+      <ul>
+      <a href="https://djangocentral.com/building-a-blog-application-with-django/">How To Install Python on Windows</a>
+      </ul>
+
+      <br>
+      <h4>Mac and Unix Users</h4>
+      <ul>
+      <a href="https://djangocentral.com/how-to-install-python-3-and-set-up-a-local-programming-environment-on-mac-os/">How To Install Python on Windows</a>
+      </ul>
+
+      <h4>Windows Users</h4>
+      <br>
+      <div class="container1">
+      <p>cd Desktop</p>
+      <p>virtualenv django</p>
+      <p>cd django</p>
+      <p>Scripts\activate.bat</p>
+      </div>
+      <br>
+      <h4>Mac and Unix Users</h4>
+      <br>
+      <div class="container1">
+      <p>mkdir django</p>
+      <p>cd django</p>
+      <p>python3 -m venv myenv</p>
+      <p>source django/bin/activate</p>
+      </div>
+      <br>
+
+      <h4>Installing Django In the Virtual Environment</h4>
+      <p>To install Django on your virtual environment run the below command</p>
+    <br>
+      <div class="container1">
+        <p>pip install Django</p>
+      </div>
+      <br>
+      <h4>Setting Up The Project</h4>
+      <p>In your workspace create a directory called <strong>mysite</strong> and navigate into it</p>
+      <div class="container1">
+        <p>cd Desktop</p>
+        <p>mkdir mysite</p>
+        <p>cd mysite</p>
+      </div>
+      <br>
+      <p>Now run the following command in your shell to create a Django project.</p>
+      <br>
+      <div class="container1">
+        <p>django-admin startproject mysite</p>
+      </div>
+
+      <p>This will generate a project structure with several directories and python scripts.</p>
+
+      <div class="container1">
+      <p>├── mysite</p>
+      <p>│   ├── __init__.py</p>
+      <p>│   ├── settings.py</p>
+      <p>│   ├── urls.py</p>
+      <p>│   ├── wsgi.py</p>
+      <p>├── manage.py</p>
+      </div>
+      <br>
+      <p>Next, we need the create a Django application called blog. A Django application exists to perform a particular task.
+         You need to create specific applications that are responsible for providing your site desired functionalities.</p>
+
+      <p>Navigate into the outer directory where manage.py script exists and run the below command.</p>
+      <br>
+      <div class="container1">
+        <p>cd mysite</p>
+        <p>python manage.py startapp blog</p>
+      </div>
+
+      <p>These will create an app named blog in our project.</p>
+      <div class="container1">
+      <p> ├── db.sqlite3</p>
+      <p> ├── mysite</p>
+      <p> │   ├── __init__.py</p>
+      <p> │   ├── settings.py</p>
+      <p> │   ├── urls.py</p>
+      <p> │   ├── wsgi.py</p>
+      <p> ├── manage.py</p>
+      <p> └── blog</p>
+      <P>     ├── __init__.py</P>
+      <p>     ├── admin.py</p>
+      <p>     ├── apps.py</p>
+      <p>     ├── migrations</p>
+      <p>     │   └── __init__.py</p>
+      <p>     ├── models.py</p>
+      <p>     ├── tests.py</p>
+      <p>     └── views.py </p>
+      </div>
+      <br>
+      <p>Now we need to inform Django that a new application has been created, open your settings.py file and scroll to the installed 
+         apps section, which should have some already installed apps.</p>
+
+      <br>
+      <div class="container1">
+        <p>INSTALLED_APPS = [ </p>
+        <p>    'django.contrib.admin',</p>
+        <p>    'django.contrib.auth',</p>
+        <p>    'django.contrib.contenttypes',</p>
+        <p>    'django.contrib.sessions',</p>
+        <p>    'django.contrib.messages',</p>
+        <p>    'django.contrib.staticfiles',</p>
+    <p>   ] </p>
+      </div>
+      <br>
+      <p>Now add the newly created app blog at the bottom and save it.</p>
+      <br>
+      <div class="container1">
+          <p>INSTALLED_APPS = [ </p>
+          <p>    'django.contrib.admin',</p>
+          <p>    'django.contrib.auth',</p>
+          <p>    'django.contrib.contenttypes',</p>
+          <p>    'django.contrib.sessions',</p>
+          <p>    'django.contrib.messages',</p>
+          <p>    'django.contrib.staticfiles',</p>
+          <p>    'blog'    </p>
+      <p>   ] </p>
+        </div>
+        <br>
+      <p>Next, make migrations.</p>  
+      <br>
+      <div class="container1">
+        <p>python manage.py runserver</p>
+      </div>
+      <br>
+      <p>Open your browser and go to this address <a href>http://127.0.0.1:8000/ </a> if everything went well you should see this page.</p>
+
+      <div class="card"><img src ="images/capture1.jpg" ></div>
+      <br>
+      <h4>Database Models</h4>
+      <br>
+      <p>Now we will define the data models for our blog. A model is a Python class that subclasses django.db.models.Model, in which each attribute
+         represents a database field. Using this subclass functionality, we automatically have access to everything within django.db.models.Models and
+         can add additional fields and methods as desired. We will have a Post model in our database to store posts.</p>
+
+      <br>
+      <div class="card"><img src ="images/capture2.jpg" ></div>
+      <br>
+      <p>At the top, we’re importing the class models and then creating a subclass of models.Model Like any typical blog each blog post will have a title,
+         slug, author name, and the timestamp or date when the article was published or last updated.</p>
+
+      <p>Notice how we declared a tuple for STATUS of a post to keep draft and published posts separated when we render them out with templates.
+         The Meta class inside the model contains metadata. We tell Django to sort results in the created_on field in descending order by default
+         when we query the database. We specify descending order using the negative prefix. By doing so, posts published recently will appear first.</p>
+          
+      <p>The __str__() method is the default human-readable representation of the object. Django will use it in many places, such as the administration site.</p>
+          
+      <p>Now that our new database model is created we need to create a new migration record for it and migrate the change into our database.</p>
+
+      <br>
+      <div class="container1">
+        <p>(django) $ python manage.py makemigrations</p> 
+        <p>(django) $ python manage.py migrate</p>
+      </div>
+
+      <p>Now we are done with the database.</p>
+      <br>
+      <h4>Creating An Administration Site</h4>
+      <p>We will create an admin panel to create and manage Posts. Fortunately, Django comes with an inbuilt admin interface for such tasks.</p>
+
+      <p>In order to use the Django admin first, we need to create a superuser by running the following command in the prompt.</p>
+      <br>
+      <div class="container1">
+        <p>python manage.py createsuperuser</p>
+      </div>
+      <br>
+      <p>You will be prompted to enter email, password, and username. Note that for security concerns Password won’t be visible.</p>
+      <br>
+      <div class="container1">
+        <p>Username (leave blank to use 'user'): admin</p>
+        <p>Email address: admin@gamil.com</p>
+        <p>Password:</p>
+        <p>Password (again):</p>
+      </div>
+      <br>
+      <p>Enter any details you can always change them later. After that rerun the development server and go to the address<a href ="#"> http://127.0.0.1:8000/admin/</a></p>
+      <br>
+      <div class="container1">
+        <p>python manage.py runserver</p>
+      </div>
+      <br>
+      <p>You should see a login page, enter the details you provided for the superuser.</p>
+      <br>
+      <div class="card"><img src ="images/capture3.jpg" ></div>
+      <br>
+      <p>After you log in you should see a basic admin panel with Groups and Users models which come from Django authentication framework located in <a href="#">django.contrib.auth.</a> </p>
+      <br>
+      <div class="card"><img src ="images/capture4.jpg" ></div>
+      <br>
+      <p>Still, we can’t create posts from the panel we need to add the Post model to our admin.</p>
+      <br>
+      <h4>Adding Models To The Administration Site</h4>
+      <p>Open the <a href="#">blog/admin.py</a>  file and register the Post model there as follows.</p>
+      <div class="container1">
+        <p>from django.contrib import admin </p>
+        <p>admin.site.register(Post)</p>
+      </div>
+      <p>Save the file and refresh the page you should see the Posts model there.</p>
+      <br>
+      <div class="card"><img src ="images/capture5.jpg" ></div>
+      <br>
+      <p>Now let’s create our first blog post click on the Add icon beside Post which will take you to another page where you can create a post. Fill the respective forms and create your first ever post.</p>
+      <br>
+      <div class="card"><img src ="images/capture6.jpg" ></div>
+      <br>
+      <p>Once you are done with the Post save it now, you will be redirected to the post list page with a success message at the top.</p>
+      <br>
+      <div class="card"><img src ="images/capture7.jpg" ></div>
+      <br>
+      <p>Though it does the work, we can customize the way data is displayed in the administration panel according to our convenience. Open the <a href="#">admin.py</a>file again and replace it with the code below.</p>  
+      <br>
+      <div class="card"><img src ="images/capture8.jpg" ></div>
+      <br>
+      <p>This will make our admin dashboard more efficient. Now if you visit the post list, you will see more details about the Post.</p>
+      <br>
+      <div class="card"><img src ="images/capture9.jpg" ></div>  
+      <br>
+      <p>Note that I have added a few posts for testing.</p>
+
+      <p>The <a href="#">list_display</a> attribute does what its name suggests display the properties mentioned in the tuple in the post list for each post.</p>
+          
+      <p>If you notice at the right, there is a filter which is filtering the post depending on their Status this is done by the <a href="#">list_filter </a>
+        method.</p>
+          
+      <p>And now we have a search bar at the top of the list, which will search the database from the <a href="#">search_fields </a> attributes. The last attribute <a href="#">prepopulated_fields</a>
+         populates the slug, now if you create a post the slug will automatically be filled based upon your title.</p>
+          
+      <p>Now that our database model is complete we need to create the necessary views, URLs, and templates so we can display the information on our web application.</p>
+      <br>
+      <h4>Building Views</h4>
+      <p>A Django view is just a Python function that receives a web request and returns a web response. We’re going to use class-based views then map URLs for each view and create an HTML templated for the 
+        data returned from the views.</p>
+      <br>
+      <p>Open the <a href="#">blog/views.py </a> file and start coding.</p>
+      <br>
+      <div class="card"><img src ="images/capture10.jpg" ></div> 
+      <br>
+    <p>The built-in ListViews which is a subclass of generic class-based-views render a list with the objects of the specified model we just need to mention the template, similarly DetailView provides a detailed view for a given object of the model at the provided template.<p>
+
+    <p>Note that for <a href="#"> PostList </a> view we have applied a filter so that only the post with status published be shown in the front end of our blog. Also in the same query, we have arranged all the posts by their creation date. The ( – ) sign before the <a href="#"> created_on </a> signifies the latest post
+ would be at the top and so on.</p>  
+    <br>
+    <h4>Adding URL patterns for Views</h4>
+    <p>We need to map the URL for the views we made above. When a user makes a request for a page on your web app, Django controller takes over to look for the corresponding view via the urls.py file, and then return the HTML response or a 404 not found error, if not found.</p>
+
+    <p>Create an urls.py file in your blog application directory and add the following code.</p>
+    <br>
+    <div class="card"><img src ="images/capture11.jpg" ></div> 
+    <br>
+    <p>We mapped general URL patterns for our views using the path function. The first pattern takes an empty string denoted by ' ' and returns the result generated from the <a href ="#"> PostList </a> view which is essentially a list of posts for our homepage and at last we have an optional 
+      parameter name which is basically a name for the view which will later be used in the templates.</p>
+
+    <p>Names are an optional parameter, but it is a good practice to give unique and rememberable names to views which makes our work easy while designing templates and it helps keep things organized as your number of URLs grows.</p>
+        
+    <p>Next, we have the generalized expression for the <a href="#"> PostDetail </a> views which resolves the slug (a string consisting of ASCII letters or numbers) Django uses angle brackets < > to capture the values from the URL and return the equivalent post detail page.</p>
+        
+    <p>Now we need to include these blog URLs to the actual project for doing so open the <a href="#" >mysite/urls.py </a> file.</p>
+    <br>
+    <div class="card"><img src ="images/capture12.jpg" ></div> 
+    <br>
+    <p>Now first import the include function and then add the path to the new urls.py file in the urlpatterns list.</p>
+    <br>
+    <div class="card"><img src ="images/capture13.jpg" ></div>
+    <br>
+    <p>Now all the request will directly be handled by the blog app.</p>
+    <br>
+    <h4>Creating Templates For The Views</h4>
+    <p>We are done with the Models and Views now we need to make templates to render the result to our users. To use Django templates we need to configure the template setting first.</p>
+
+    <p>Create directory templates in the base directory. Now open the project’s settings.py file and just below BASE_DIR add the route to the template directory as follows.</p>
+    <br>
+    <div class="container1">
+      <p>TEMPLATES_DIR = os.path.join(BASE_DIR,'templates')</p>
+    </div>
+    <br>
+    <p>Now In <a href="#"> settings.py </a> scroll to the,<a href="#">TEMPLATES </a> which should look like this.</p>
+    <br>
+    <div class="card"><img src ="images/capture14.jpg" ></div>
+    <br>
+    <p>Now add the newly created <a href="#">TEMPLATE_DIRS </a>  in the <a href="#"> DIRS.</a></p>
+    <br>
+    <div class="card"><img src ="images/capture15.jpg" ></div>
+    <br>
+    <p>Now save and close the file we are done with the configurations.</p>
+
+    <p>Django makes it possible to separate python and HTML, the python goes in views and HTML goes in templates. Django has a powerful template language that allows you to specify how data
+       is displayed. It is based on template tags, template variables, and template filters.</p>
+        
+    <p>I’ll start off with a <a href ="#">base.html </a> file and a <a href="#">index.html </a> file that inherits from it. Then later when we add templates for homepage and post detail pages, they too can inherit from <a href="#">base.html.</a></p>
+        
+    <p>Let’s start with the base.html file which will have common elements for the blog at any page like the navbar and footer. Also, we are using Bootstrap for the UI and Roboto font.</p>
+</main><!-- /.container --> 
+
+
+  <a href="#">Back to top</a>
+</p>
+</footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
